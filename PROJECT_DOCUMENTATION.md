@@ -706,7 +706,7 @@ app.Run();
 
 1. **Clone or Download the Project**
 ```powershell
-cd "c:\Users\SESA845051\OneDrive - Schneider Electric\Coding\Formulatrix\B_"
+cd "C:\path\to\RepositoryApp"
 ```
 
 2. **Restore Dependencies**

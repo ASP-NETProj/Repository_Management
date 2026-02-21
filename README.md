@@ -1,6 +1,6 @@
 
 ## Repository Management
-[![Watch the video](https://img.youtube.com/vi/erZqWxC332o/hqdefault.jpg)](https://www.youtube.com/watch?v=erZqWxC332o)
+[![Watch the video](https://img.youtube.com/vi/erZqWxC332o/sddefault.jpg)](https://www.youtube.com/watch?v=erZqWxC332o)
 
 
 ## Project Structure

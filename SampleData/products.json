@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "Laptop",
+    "Price": 999.99,
+    "StockQuantity": 50
+  },
+  {
+    "Name": "Mouse",
+    "Price": 25.50,
+    "StockQuantity": 200
+  },
+  {
+    "Name": "Keyboard",
+    "Price": 75.00,
+    "StockQuantity": 150
+  },
+  {
+    "Name": "Monitor",
+    "Price": 299.99,
+    "StockQuantity": 75
+  },
+  {
+    "Name": "USB Cable",
+    "Price": 9.99,
+    "StockQuantity": 500
+  }
+]

@@ -1,0 +1,93 @@
+@model RepositoryApp.Models.Product
+
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0">
+                        <i class="bi bi-plus-circle"></i> Create New Product
+                    </h4>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="Create" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                        
+                        <div class="mb-4">
+                            <label asp-for="Name" class="form-label fw-bold">
+                                <i class="bi bi-tag"></i> Product Name
+                            </label>
+                            <input asp-for="Name" class="form-control form-control-lg" 
+                                   placeholder="Enter product name" autofocus />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="Price" class="form-label fw-bold">
+                                    <i class="bi bi-currency-dollar"></i> Price
+                                </label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text">$</span>
+                                    <input asp-for="Price" class="form-control" 
+                                           placeholder="0.00" step="0.01" />
+                                </div>
+                                <span asp-validation-for="Price" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="StockQuantity" class="form-label fw-bold">
+                                    <i class="bi bi-boxes"></i> Stock Quantity
+                                </label>
+                                <input asp-for="StockQuantity" class="form-control form-control-lg" 
+                                       placeholder="0" />
+                                <span asp-validation-for="StockQuantity" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">
+                                <i class="bi bi-file-earmark-code"></i> Storage Format
+                            </label>
+                            <div class="btn-group w-100" role="group">
+                                <input type="radio" class="btn-check" name="storageFormat" 
+                                       id="jsonFormat" value="json" checked autocomplete="off">
+                                <label class="btn btn-outline-primary" for="jsonFormat">
+                                    <i class="bi bi-filetype-json"></i> JSON
+                                </label>
+
+                                <input type="radio" class="btn-check" name="storageFormat" 
+                                       id="xmlFormat" value="xml" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="xmlFormat">
+                                    <i class="bi bi-filetype-xml"></i> XML
+                                </label>
+                            </div>
+                            <small class="form-text text-muted">
+                                Choose how the product data will be stored in the repository
+                            </small>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                            <a asp-action="Index" class="btn btn-outline-secondary btn-lg">
+                                <i class="bi bi-arrow-left"></i> Back to List
+                            </a>
+                            <button type="submit" class="btn btn-success btn-lg">
+                                <i class="bi bi-check-circle"></i> Create Product
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

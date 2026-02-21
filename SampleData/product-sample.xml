@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Product>
+  <Name>Laptop</Name>
+  <Price>999.99</Price>
+  <StockQuantity>50</StockQuantity>
+</Product>

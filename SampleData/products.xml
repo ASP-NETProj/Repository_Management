@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Products>
+  <Product>
+    <Name>Laptop</Name>
+    <Price>999.99</Price>
+    <StockQuantity>50</StockQuantity>
+  </Product>
+  <Product>
+    <Name>Mouse</Name>
+    <Price>25.50</Price>
+    <StockQuantity>200</StockQuantity>
+  </Product>
+  <Product>
+    <Name>Keyboard</Name>
+    <Price>75.00</Price>
+    <StockQuantity>150</StockQuantity>
+  </Product>
+  <Product>
+    <Name>Monitor</Name>
+    <Price>299.99</Price>
+    <StockQuantity>75</StockQuantity>
+  </Product>
+  <Product>
+    <Name>USB Cable</Name>
+    <Price>9.99</Price>
+    <StockQuantity>500</StockQuantity>
+  </Product>
+</Products>
